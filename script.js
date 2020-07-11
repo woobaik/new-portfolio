@@ -24,15 +24,15 @@ let tl = gsap.timeline({
 //Todo:: CHECK value of "<" ">"
 tl.to("#intro-name", {
 	scale: 2,
-	y: 100,
+	y: 200,
 	ease: "slow(0.7, 0.7, false)",
-	duration: 9000,
+	duration: 4500,
 })
 
 tl.to("#intro-name", {
-	y: -400,
+	y: -300,
 	ease: "power2.out",
-	duration: 9000,
+	duration: 4500,
 	scale: 1,
 })
 
@@ -40,42 +40,42 @@ tl.to("#intro-full-stack", {
 	opacity: 1,
 	scale: 3,
 	ease: "slow(0.7, 0.7, false)",
-	duration: 9000,
+	duration: 7000,
 })
 
 tl.to("#intro-full-stack", {
 	scale: 0.9,
 	x: 300,
 	ease: "slow(0.7, 0.7, false)",
-	duration: 9000,
+	duration: 2000,
 	stagger: 2,
 })
 
 tl.to("#intro-motivated", {
 	opacity: 1,
-	y: -500,
-	duration: 9000,
+	y: -400,
+	duration: 12000,
 })
 
 tl.to("#intro-passion", {
 	opacity: 1,
-	y: -170,
+	y: -100,
 	duration: 9000,
 })
 
-tl.to(["#intro-motivated", "#intro-passion"], {
+tl.to(["#intro-motivated", "#intro-passion", "#intro-full-stack"], {
 	opacity: 0,
 	y: -500,
 	scale: 0.5,
 	duration: 9000,
 })
 
-tl.to("#intro-full-stack", {
-	opacity: 0,
-	scale: 0.5,
-	y: 100,
-	duration: 9000,
-})
+// tl.to("#intro-full-stack", {
+// 	opacity: 0,
+// 	scale: 0.5,
+// 	y: 100,
+// 	duration: 9000,
+// })
 
 tl.to("#intro-join", {
 	opacity: 1,
