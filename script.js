@@ -1,3 +1,5 @@
+const video = document.getElementById("bg-video")
+
 gsap.registerPlugin(ScrollTrigger)
 // INITIALIZE gsap timeline => https://greensock.com/docs/v3/GSAP/gsap.timeline()
 let tl = gsap.timeline({
@@ -5,9 +7,17 @@ let tl = gsap.timeline({
 		trigger: ".intro",
 		pin: ".intro",
 		start: "top top",
-		end: "+=8000",
+		end: "+=5000",
 		scrub: 1,
 		onLeave: () => console.log("hi"),
+		onUpdate: ({ progress, direction, isActive }) => {
+			let fixedProgress = parseFloat(progress.toFixed(2))
+			let fiexedDuration = parseFloat(video.duration.toFixed(2))
+
+			let playTime = (fixedProgress * fiexedDuration).toFixed(2)
+			console.log("CURRENT", fixedProgress, fiexedDuration, Number(playTime))
+			video.currentTime = Number(playTime)
+		},
 	},
 })
 
@@ -114,14 +124,17 @@ window.addEventListener("DOMContentLoaded", () => {
 			opacity: 1,
 		})
 		browseBtn.style.display = "none"
-
-		tl2.to("#swiper-container", {
-			opacity: 1,
-			duration: 2,
-			scale: 1.2,
-			ease: "bounce",
-			display: "block",
-		})
+		tl2.fromTo(
+			".swiper-container",
+			{ scale: 0.1, display: "none" },
+			{
+				opacity: 1,
+				duration: 1,
+				scale: 1.2,
+				ease: "bounce",
+				display: "block",
+			}
+		)
 	})
 })
 
@@ -132,6 +145,8 @@ var swiper = new Swiper(".swiper-container", {
 	// 	delay: 3000,
 	// },
 	loop: true,
+	observer: true,
+	observeParents: true,
 	grabCursor: true,
 	cubeEffect: {
 		shadow: true,
