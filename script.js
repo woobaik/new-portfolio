@@ -53,7 +53,7 @@ tl.to("#intro-full-stack", {
 
 tl.to("#intro-motivated", {
 	opacity: 1,
-	y: -400,
+	y: -350,
 	duration: 12000,
 })
 
@@ -126,11 +126,12 @@ window.addEventListener("DOMContentLoaded", () => {
 		browseBtn.style.display = "none"
 		tl2.fromTo(
 			".swiper-container",
-			{ scale: 0.1, display: "none" },
+			//display none
+			{ scale: 0.1 },
 			{
 				opacity: 1,
 				duration: 1,
-				scale: 1.2,
+				scale: 1.0,
 				ease: "bounce",
 				display: "block",
 			}

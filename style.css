@@ -183,6 +183,7 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	font-family: "Nico Moji", cursive;
+
 	display: inline-block;
 	padding: 25px 30px;
 	color: #03e94f;
@@ -281,28 +282,52 @@ h1 {
 
 .swiper-container {
 	width: 800px;
-	height: 500px;
+
 	position: absolute;
 	left: 50%;
-	top: 50%;
+
 	margin-left: -150px;
 	margin-top: -150px;
-	display: none;
+	/* display: none; */
+}
+
+#swiper-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .swiper-slide {
 	background-color: white;
 	background-position: center;
 	background-size: cover;
+	text-align: center;
 }
 
 .swiper-slide img {
 	width: 100%;
 }
 
-#swiper-container {
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.swiper-slide .slide-title {
+	height: 5vh;
+	font-family: "Nico Moji", cursive;
+	font-size: 2rem;
+
+	padding-top: 1rem;
+}
+
+.swiper-slide .slide-summary {
+	padding: 1rem 0;
+}
+
+.swiper-slide .slide-tech ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.swiper-slide .slide-tech ul li {
+	padding-bottom: 1rem;
 }
