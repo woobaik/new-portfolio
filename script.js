@@ -1,5 +1,6 @@
 const video = document.getElementById("bg-video")
 
+gsap.to("#intro-scroll", { y: 15, repeat: 10, yoyoEase: true })
 gsap.registerPlugin(ScrollTrigger)
 // INITIALIZE gsap timeline => https://greensock.com/docs/v3/GSAP/gsap.timeline()
 let tl = gsap.timeline({

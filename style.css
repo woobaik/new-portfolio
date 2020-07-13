@@ -17,7 +17,11 @@ body {
 	/* display: none; */
 }
 
-.intro-text {
+.intro #intro-scroll {
+	position: absolute;
+	top: 90vh;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .intro #intro-name {
@@ -111,57 +115,57 @@ h1 {
 .portfolio-intro #portfolio-logo path:nth-child(2) {
 	stroke-dashoffset: 154px;
 	stroke-dasharray: 154px;
-	animation: portfolio-line 2s ease forwards;
+	animation: portfolio-line 1s ease forwards;
 	animation-play-state: paused;
 }
 
 .portfolio-intro #portfolio-logo path:nth-child(3) {
 	stroke-dasharray: 160px;
 	stroke-dashoffset: 160px;
-	animation: portfolio-line 2.5s ease forwards 0.5s;
+	animation: portfolio-line 1.5s ease forwards 0.5s;
 	animation-play-state: paused;
 }
 
 .portfolio-intro #portfolio-logo path:nth-child(4) {
 	stroke-dasharray: 194px;
 	stroke-dashoffset: 194px;
-	animation: portfolio-line 3s ease forwards 1s;
+	animation: portfolio-line 2s ease forwards 1s;
 	animation-play-state: paused;
 }
 .portfolio-intro #portfolio-logo path:nth-child(5) {
 	stroke-dasharray: 107px;
 	stroke-dashoffset: 107px;
-	animation: portfolio-line 3.5s ease forwards 1.5s;
+	animation: portfolio-line 2.5s ease forwards 1.5s;
 	animation-play-state: paused;
 }
 .portfolio-intro #portfolio-logo path:nth-child(6) {
 	stroke-dasharray: 144px;
 	stroke-dashoffset: 144px;
-	animation: portfolio-line 4s ease forwards 2s;
+	animation: portfolio-line 3s ease forwards 2s;
 	animation-play-state: paused;
 }
 .portfolio-intro #portfolio-logo path:nth-child(7) {
 	stroke-dasharray: 160px;
 	stroke-dashoffset: 160px;
-	animation: portfolio-line 4.5s ease forwards 2.5s;
+	animation: portfolio-line 3.5s ease forwards 2.5s;
 	animation-play-state: paused;
 }
 .portfolio-intro #portfolio-logo path:nth-child(8) {
 	stroke-dasharray: 95px;
 	stroke-dashoffset: 95px;
-	animation: portfolio-line 2s ease forwards 3s;
+	animation: portfolio-line 1s ease forwards 3s;
 	animation-play-state: paused;
 }
 .portfolio-intro #portfolio-logo path:nth-child(9) {
 	stroke-dasharray: 142px;
 	stroke-dashoffset: 142px;
-	animation: portfolio-line 2s ease forwards 3.5s;
+	animation: portfolio-line 1s ease forwards 3.5s;
 	animation-play-state: paused;
 }
 .portfolio-intro #portfolio-logo path:nth-child(10) {
 	stroke-dasharray: 160px;
 	stroke-dashoffset: 160px;
-	animation: portfolio-line 5s ease forwards 4s;
+	animation: portfolio-line 4s ease forwards 4s;
 	animation-play-state: paused;
 }
 
@@ -174,7 +178,7 @@ h1 {
 /* neon button */
 
 #browse {
-	position: relative;
+	position: absolute;
 	top: 80%;
 	left: 50%;
 	transform: translateX(-50%);
@@ -278,21 +282,24 @@ h1 {
 }
 
 /* swiper! */
-
+.slider-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 4rem;
+}
 .swiper-container {
-	width: 800px;
-	position: absolute;
+	/* position: absolute;
 	left: 50%;
-	margin-left: -150px;
-	margin-top: -150px;
-	top: 25%;
+	top: 5%; */
 	display: none;
+	width: 30%;
 }
 
 #swiper-container {
-	position: absolute;
+	/* position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%); */
 }
 
 .swiper-slide {
@@ -331,6 +338,7 @@ h1 {
 	align-items: center;
 	justify-content: space-around;
 	padding: 2rem 0;
+	flex-wrap: wrap;
 }
 
 .swiper-slide .slide-tech ul li {

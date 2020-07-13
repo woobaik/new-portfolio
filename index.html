@@ -16,6 +16,7 @@
 	</head>
 	<body>
 		<section class="intro">
+			<p class="intro-text" id="intro-scroll">SCROLL DOWN</p>
 			<p class="intro-text" id="intro-name">JOUNGWOO BAIK</p>
 			<p class="intro-text" id="intro-full-stack">
 				<span>1. </span> A Full stack software engineer.
@@ -73,72 +74,75 @@
 				<path id="wave-first" fill="url(#grad1)" d= "M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z" fill="url(#wave1)" />
 			</svg>
 			<!-- Slider main container -->
-			<div id="swiper-container" class="swiper-container">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide slide2" >
-						<div class='slide-title'>WHAT TO WATCH</div>
-						<a href="https://woobaik.github.io/what_to_watch/#/" target="_blank"><img src="./img/whatto.gif" alt="what to watch"></a>
-						<div>
-							<div class='slide-summary'>A responsive website for finding things to watch</div>
-							<div class='slide-tech'>
-								<ul>
-									<li><span class="iconify" data-icon="logos:react" data-inline="false"></span>&nbsp;React.js</li>
-									<li><span class="iconify" data-icon="logos:redux" data-inline="false"></span></span>&nbsp;Redux</li>
-									<li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>&nbsp;Javascript</li>
-									<li><span class="iconify" data-icon="logos:sass" data-inline="false"></span>&nbsp;Sass</li>
-								</ul>
+			<div class="slider-container">
+				<div id="swiper-container" class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide slide2" >
+							<div class='slide-title'>WHAT TO WATCH</div>
+							<a href="https://woobaik.github.io/what_to_watch/#/" target="_blank"><img src="./img/whatto.gif" alt="what to watch"></a>
+							<div>
+								<div class='slide-summary'>A responsive website for finding things to watch</div>
+								<div class='slide-tech'>
+									<ul>
+										<li><span class="iconify" data-icon="logos:react" data-inline="false"></span>&nbsp;React.js</li>
+										<li><span class="iconify" data-icon="logos:redux" data-inline="false"></span></span>&nbsp;Redux</li>
+										<li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>&nbsp;Javascript</li>
+										<li><span class="iconify" data-icon="logos:sass" data-inline="false"></span>&nbsp;Sass</li>
+									</ul>
+								</div>
 							</div>
 						</div>
+						
+	
+						<div class="swiper-slide slide1">
+							<div class='slide-title'>IGDB CLONE</div>
+							<a href="https://woobaik.github.io/igdb-client-side/#/" target="_blank"><img src="./img/igdb.gif" alt="igdb"></a>
+							<div>
+								<div class='slide-summary'>An IGDB clone for fetching information from 3rd party database API.</div>
+								<div class='slide-tech'>
+									<ul>
+										<li><span class="iconify" data-icon="logos:react" data-inline="false"></span>&nbsp;React.js</li>
+										<li><span class="iconify" data-icon="logos:redux" data-inline="false"></span>&nbsp;Redux</li>
+										<li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>&nbsp;Javascript</li>
+										<li><span class="iconify" data-icon="logos:sass" data-inline="false"></span>&nbsp;Sass</li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="swiper-slide slide3">
+							<div class='slide-title'>TRELLO CLONE</div>
+							<a href="https://thawing-bastion-72068.herokuapp.com/" target="_blank"><img src="./img/trello.gif" alt="trello!"></a>
+							<div>
+								
+								<div class='slide-summary'>A Trello clone for managing todo list, or memo with User authenticate, authorization features.</div>
+								<div class='slide-tech'>
+									<ul>
+										<li><span class="iconify" data-icon="logos:vue" data-inline="false"></span>&nbsp;Vue.js</li>
+										<li><span class="iconify" data-icon="logos:ruby" data-inline="false"></span>&nbsp;Ruby</li>
+										<li><span class="iconify" data-icon="logos:rails" data-inline="false"></span>&nbsp; Ruby on Rails</li>
+										<li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>&nbsp;Javascript</li>
+										<li><span class="iconify" data-icon="logos:postgresql" data-inline="false"></span>&nbsp; PostgreSQL</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						...
 					</div>
+	
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+	
+			   <div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+					<!-- If we need scrollbar -->
 					
-
-					<div class="swiper-slide slide1">
-						<div class='slide-title'>IGDB CLONE</div>
-						<a href="https://woobaik.github.io/igdb-client-side/#/" target="_blank"><img src="./img/igdb.gif" alt="igdb"></a>
-						<div>
-							<div class='slide-summary'>An IGDB clone for fetching information from 3rd party database API.</div>
-							<div class='slide-tech'>
-								<ul>
-									<li><span class="iconify" data-icon="logos:react" data-inline="false"></span>&nbsp;React.js</li>
-									<li><span class="iconify" data-icon="logos:redux" data-inline="false"></span>&nbsp;Redux</li>
-									<li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>&nbsp;Javascript</li>
-									<li><span class="iconify" data-icon="logos:sass" data-inline="false"></span>&nbsp;Sass</li>
-									
-								</ul>
-							</div>
-						</div>
-					</div>
-					
-					<div class="swiper-slide slide3">
-						<div class='slide-title'>TRELLO CLONE</div>
-						<a href="https://thawing-bastion-72068.herokuapp.com/" target="_blank"><img src="./img/trello.gif" alt="trello!"></a>
-						<div>
-							
-							<div class='slide-summary'>A Trello clone for managing todo list, or memo with User authenticate, authorization features.</div>
-							<div class='slide-tech'>
-								<ul>
-									<li><span class="iconify" data-icon="logos:vue" data-inline="false"></span>&nbsp;Vue.js</li>
-									<li><span class="iconify" data-icon="logos:ruby" data-inline="false"></span>&nbsp;Ruby</li>
-									<li><span class="iconify" data-icon="logos:rails" data-inline="false"></span>&nbsp; Ruby on Rails</li>
-									<li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>&nbsp;Javascript</li>
-									<li><span class="iconify" data-icon="logos:postgresql" data-inline="false"></span>&nbsp; PostgreSQL</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					...
 				</div>
-
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
-
-		   <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-				<!-- If we need scrollbar -->
-				
 			</div>
+			
 		</section>
 		<section class="projects">
 			
