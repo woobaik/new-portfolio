@@ -62,7 +62,7 @@ body {
 }
 
 .intro video {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	object-fit: cover;
 }
@@ -282,18 +282,16 @@ h1 {
 
 .swiper-container {
 	width: 800px;
-
 	position: absolute;
 	left: 50%;
-
 	margin-left: -150px;
 	margin-top: -150px;
-	/* display: none; */
+	top: 70%;
+	display: none;
 }
 
 #swiper-container {
 	position: absolute;
-	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -303,6 +301,7 @@ h1 {
 	background-position: center;
 	background-size: cover;
 	text-align: center;
+	font-family: "Vollkorn", serif;
 }
 
 .swiper-slide img {
@@ -310,15 +309,19 @@ h1 {
 }
 
 .swiper-slide .slide-title {
-	height: 5vh;
-	font-family: "Nico Moji", cursive;
 	font-size: 2rem;
-
-	padding-top: 1rem;
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+	padding: 1rem 0;
+	font-weight: 900;
+	margin-top: 2rem;
 }
 
 .swiper-slide .slide-summary {
-	padding: 1rem 0;
+	padding: 2rem 0;
+	border-bottom: 1px solid gray;
+	font-weight: 500;
+	font-style: italic;
 }
 
 .swiper-slide .slide-tech ul {
@@ -326,8 +329,10 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	padding: 2rem 0;
 }
 
 .swiper-slide .slide-tech ul li {
 	padding-bottom: 1rem;
+	color: rgb(85, 85, 85);
 }

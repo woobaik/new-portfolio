@@ -9,13 +9,15 @@ let tl = gsap.timeline({
 		start: "top top",
 		end: "+=5000",
 		scrub: 1,
-		onLeave: () => console.log("hi"),
+
 		onUpdate: ({ progress, direction, isActive }) => {
 			let fixedProgress = parseFloat(progress.toFixed(2))
 			let fiexedDuration = parseFloat(video.duration.toFixed(2))
 
-			let playTime = (fixedProgress * fiexedDuration).toFixed(2)
-			console.log("CURRENT", fixedProgress, fiexedDuration, Number(playTime))
+			let playTime = isNaN((fixedProgress * fiexedDuration).toFixed(2))
+				? 0
+				: (fixedProgress * fiexedDuration).toFixed(2)
+
 			video.currentTime = Number(playTime)
 		},
 	},
@@ -30,9 +32,9 @@ tl.to("#intro-name", {
 })
 
 tl.to("#intro-name", {
-	y: -300,
+	y: -400,
 	ease: "power2.out",
-	duration: 4500,
+	duration: 3000,
 	scale: 1,
 })
 
@@ -53,8 +55,8 @@ tl.to("#intro-full-stack", {
 
 tl.to("#intro-motivated", {
 	opacity: 1,
-	y: -350,
-	duration: 12000,
+	y: -450,
+	duration: 13000,
 })
 
 tl.to("#intro-passion", {
@@ -67,7 +69,7 @@ tl.to(["#intro-motivated", "#intro-passion", "#intro-full-stack"], {
 	opacity: 0,
 	y: -500,
 	scale: 0.5,
-	duration: 9000,
+	duration: 5000,
 })
 
 // tl.to("#intro-full-stack", {
@@ -81,7 +83,7 @@ tl.to("#intro-join", {
 	opacity: 1,
 
 	y: -100,
-	duration: 9000,
+	duration: 7000,
 })
 
 tl.to(".intro", {
@@ -90,7 +92,7 @@ tl.to(".intro", {
 })
 
 // ==== PORTFOLIO INTRO ====
-const paths = document.querySelectorAll(".portfolio-intro svg path")
+const paths = document.querySelectorAll("#portfolio-logo path")
 
 const svgAnimation = () => {
 	for (let i = 0; i < paths.length; i++) {
@@ -99,8 +101,8 @@ const svgAnimation = () => {
 }
 
 ScrollTrigger.create({
-	trigger: "#portfolio-logo",
-	start: "-150px center",
+	trigger: ".portfolio-intro",
+	start: "top center",
 	onEnter: () => svgAnimation(),
 })
 
@@ -126,8 +128,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		browseBtn.style.display = "none"
 		tl2.fromTo(
 			".swiper-container",
-			//display none
-			{ scale: 0.1 },
+			{ scale: 0.1, display: "none" },
 			{
 				opacity: 1,
 				duration: 1,
