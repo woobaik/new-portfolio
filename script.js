@@ -116,15 +116,19 @@ window.addEventListener("DOMContentLoaded", () => {
 		// timeline for clicking browse btn
 
 		const tl2 = gsap.timeline()
-		tl2.to("#wave-first", {
-			duration: 3,
-			ease: "power2.out",
-			attr: {
-				d:
-					"M-233.536,0,2045.179-3.714s-187.571,2331.643-518.143,2329.786-516.286-1226.643-848.714-1215.5S311.536,2454.215,58.036,2448.644-233.536,0-233.536,0Z",
-			},
-			opacity: 1,
-		})
+		tl2.fromTo(
+			"#wave-first",
+			{ y: -315 },
+			{
+				duration: 3,
+				ease: "power2.out",
+				attr: {
+					d:
+						"M-233.536,0,2045.179-3.714s-187.571,2331.643-518.143,2329.786-516.286-1226.643-848.714-1215.5S311.536,2454.215,58.036,2448.644-233.536,0-233.536,0Z",
+				},
+				opacity: 1,
+			}
+		)
 		browseBtn.style.display = "none"
 		tl2.fromTo(
 			".swiper-container",
@@ -155,5 +159,12 @@ var swiper = new Swiper(".swiper-container", {
 		slideShadows: false,
 		shadowOffset: 20,
 		shadowScale: 0.94,
+	},
+	pagination: {
+		el: ".swiper-pagination",
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
 	},
 })

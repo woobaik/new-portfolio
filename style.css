@@ -94,7 +94,7 @@ h1 {
 /* liquid scene */
 
 .portfolio-intro {
-	background-color: black;
+	background-color: rgb(61, 61, 61);
 	width: 100%;
 	height: 100vh;
 	position: relative;
@@ -183,7 +183,6 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	font-family: "Nico Moji", cursive;
-
 	display: inline-block;
 	padding: 25px 30px;
 	color: #03e94f;
@@ -286,14 +285,14 @@ h1 {
 	left: 50%;
 	margin-left: -150px;
 	margin-top: -150px;
-	top: 70%;
+	top: 25%;
 	display: none;
 }
 
 #swiper-container {
 	position: absolute;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translateX(-50%);
 }
 
 .swiper-slide {
@@ -310,16 +309,18 @@ h1 {
 
 .swiper-slide .slide-title {
 	font-size: 2rem;
-	border-bottom: 1px solid gray;
-	border-top: 1px solid gray;
+	border-bottom: 8px solid rgb(192, 191, 191);
+	border-top: 8px solid rgb(192, 191, 191);
 	padding: 1rem 0;
+	margin-bottom: 1rem;
 	font-weight: 900;
-	margin-top: 2rem;
 }
 
 .swiper-slide .slide-summary {
 	padding: 2rem 0;
 	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+	margin-top: 1rem;
 	font-weight: 500;
 	font-style: italic;
 }
@@ -335,4 +336,18 @@ h1 {
 .swiper-slide .slide-tech ul li {
 	padding-bottom: 1rem;
 	color: rgb(85, 85, 85);
+}
+
+.swiper-pagination-bullet {
+	width: 15px !important;
+	height: 15px !important;
+}
+
+.swiper-button-prev {
+	color: white !important;
+	left: -50px !important;
+}
+.swiper-button-next {
+	color: white !important;
+	right: -50px !important;
 }
