@@ -286,14 +286,14 @@ h1 {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
 .swiper-container {
 	/* position: absolute;
 	left: 50%;
 	top: 5%; */
 	display: none;
-	width: 30%;
+	width: 50%;
 }
 
 #swiper-container {
