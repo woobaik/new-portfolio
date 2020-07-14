@@ -1,6 +1,7 @@
 const video = document.getElementById("bg-video")
 
-gsap.to("#intro-scroll", { y: 15, repeat: 10, yoyoEase: true })
+gsap.to("#intro-scroll", { y: 15, repeat: 7, yoyoEase: true })
+
 gsap.registerPlugin(ScrollTrigger)
 // INITIALIZE gsap timeline => https://greensock.com/docs/v3/GSAP/gsap.timeline()
 let tl = gsap.timeline({
@@ -92,6 +93,19 @@ tl.to(".intro", {
 	duration: 9000,
 })
 
+// if viewpoint hits 2nd section, it will scroll down automatically
+let tl3 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".portfolio-intro",
+		markers: true,
+		start: "top bottom",
+		snap: {
+			snapTo: 0.5,
+		},
+		onEnter: () => console.log("intro started!"),
+	},
+})
+
 // ==== PORTFOLIO INTRO ====
 const paths = document.querySelectorAll("#portfolio-logo path")
 
@@ -146,11 +160,9 @@ window.addEventListener("DOMContentLoaded", () => {
 })
 
 // swiper
-var swiper = new Swiper(".swiper-container", {
+let swiper = new Swiper(".swiper-container", {
 	effect: "cube",
-	// autoplay: {
-	// 	delay: 3000,
-	// },
+	centeredSlides: true,
 	loop: true,
 	observer: true,
 	observeParents: true,

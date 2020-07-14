@@ -359,3 +359,17 @@ h1 {
 	color: white !important;
 	right: -50px !important;
 }
+
+/* contact */
+
+.contact {
+	background-color: black;
+	height: 100vh;
+}
+
+/* footer */
+
+.footer {
+	background-color: white;
+	height: 30vh;
+}
