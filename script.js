@@ -30,7 +30,7 @@ tl.to("#intro-name", {
 	scale: 2,
 	y: 200,
 	ease: "slow(0.7, 0.7, false)",
-	duration: 4500,
+	duration: 3000,
 })
 
 tl.to("#intro-name", {
@@ -64,14 +64,14 @@ tl.to("#intro-motivated", {
 tl.to("#intro-passion", {
 	opacity: 1,
 	y: -100,
-	duration: 9000,
+	duration: 8000,
 })
 
 tl.to(["#intro-motivated", "#intro-passion", "#intro-full-stack"], {
 	opacity: 0,
 	y: -500,
 	scale: 0.5,
-	duration: 5000,
+	duration: 6000,
 })
 
 // tl.to("#intro-full-stack", {
@@ -97,7 +97,6 @@ tl.to(".intro", {
 let tl3 = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".portfolio-intro",
-		markers: true,
 		start: "top bottom",
 		snap: {
 			snapTo: 0.5,
