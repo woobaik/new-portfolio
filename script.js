@@ -150,7 +150,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			{
 				opacity: 1,
 				duration: 1,
-				scale: 1.0,
+				scale: 0.9,
 				ease: "bounce",
 				display: "block",
 			}
