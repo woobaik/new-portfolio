@@ -365,42 +365,144 @@ h1 {
 .contact {
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
 		url("./img/picture/meeting4.jpg");
-	height: 100vh;
+
 	background-position: center;
 	background-size: cover;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	padding-bottom: 5rem;
+	font-family: "Raleway", sans-serif;
+	line-height: 1.8rem;
 }
 
 .contact .my-picture img {
-	width: 10vw;
-	height: 10vw;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
-}
-
-.contact .card {
+	margin-bottom: 1rem;
 }
 
 .contact .my-icons {
 	color: white;
+	width: 45%;
+}
+
+.contact .my-icons .contact-icon a {
+	color: inherit;
+	text-decoration: inherit;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 0.3rem;
+}
+
+.contact .contact-icon {
+	margin-bottom: 2rem;
 }
 
 .contact .icon {
-	background-color: purple;
+	background-color: rgba(147, 231, 52, 0.726);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 3rem;
-	width: 7vw;
-	height: 7vw;
+	width: 68px;
+	height: 68px;
 	border-radius: 50%;
+	position: relative;
+	opacity: 0.8;
 }
 
 .contact .icon a {
 	color: inherit;
 	text-decoration: inherit;
-	height: 50%;
+	height: 48px;
+	display: inline-block;
 }
 
-/* footer */
+.contact-card {
+	color: black;
+	width: 100%;
+	background-color: white;
+}
+
+.contact-card .card-header {
+	border-bottom: 1px solid green;
+	padding: 10px 20px;
+	background-color: rgb(17, 68, 17);
+	color: white;
+}
+
+.contact-card #hi {
+	color: tomato;
+	font-size: 2rem;
+}
+
+.contact-card #sf {
+	color: rgb(248, 45, 157);
+	font-size: 1.2rem;
+}
+
+.contact-card .card-body ul {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.contact-card .card-body ul li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	margin-top: 1rem;
+}
+.contact-card .card-body ul .iconify {
+	color: rgb(88, 184, 96);
+	font-size: 5rem;
+}
+.form-container {
+	background-color: transparent;
+	width: 45%;
+	color: white;
+}
+
+.form-container .contact-me {
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	letter-spacing: 2px;
+}
+
+.contact-input {
+	font-weight: 500;
+	font-size: 18px;
+	border-radius: 5px;
+	line-height: 22px;
+	border: 2px solid #cc6666;
+	background-color: transparent;
+	padding: 13px;
+	margin-bottom: 15px;
+	width: 100%;
+	outline: 0;
+	color: white;
+}
+
+form input[type="button"] {
+	width: 100%;
+	background-color: #cc6666;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+	color: white;
+	padding: 10px 0;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/*footer */
 
 .footer {
 	background-color: white;
