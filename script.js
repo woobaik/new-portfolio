@@ -193,7 +193,7 @@ let tl4 = gsap.timeline({
 		},
 	},
 })
-tl4.to(".my-picture img", { rotate: 360, duration: 0.5, y: -20, opacity: 1 })
+tl4.to(".my-picture img", { rotate: 360, duration: 2, y: -20, opacity: 1 })
 tl4.to(".contact-icon a", { duration: 0.1, opacity: 1, y: 20, stagger: 0.4 })
 tl4.to(".contact-card", { duration: 0.5, opacity: 1, y: 20 })
 tl4.to("#hi", { text: "Hi, ", duration: 0.5 })
@@ -206,8 +206,8 @@ tl4.to("#header-chunk1", {
 tl4.to("#sf", { text: "San Francisco Bay Area", duration: 2 })
 tl4.to("#header-chunk2", {
 	text:
-		", but my services are available to all. If you think we can work together, send me a message about it :).",
-	duration: 3,
+		", but my services are available to all. If you think we can work together, send me a message about it :) or you can always email me, to see email address please click mail button above.",
+	duration: 4,
 	ease: Linear.easeNone,
 })
 tl4.to(".form-container", { duration: 1, opacity: 1, y: 10 })
