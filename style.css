@@ -15,6 +15,7 @@ body {
 	font-family: "Anton", sans-serif;
 	/* REMOVE */
 	/* display: none; */
+	width: 100%;
 }
 
 .intro #intro-scroll {

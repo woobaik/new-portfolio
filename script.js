@@ -207,7 +207,7 @@ tl4.to("#sf", { text: "San Francisco Bay Area", duration: 2 })
 tl4.to("#header-chunk2", {
 	text:
 		", but my services are available to all. If you think we can work together, send me a message about it :).",
-	duration: 2,
+	duration: 3,
 	ease: Linear.easeNone,
 })
 tl4.to(".form-container", { duration: 1, opacity: 1, y: 10 })
