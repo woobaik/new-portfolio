@@ -458,12 +458,12 @@ h1 {
 }
 
 .contact-card #hi {
-	color: #fea82f;
+	color: #030301;
 	font-size: 2rem;
 }
 
 .contact-card #sf {
-	color: #fea82f;
+	color: #030301;
 	font-size: 1.2rem;
 }
 
@@ -516,7 +516,7 @@ h1 {
 	color: white;
 }
 
-form input[type="button"] {
+form input[type="submit"] {
 	width: 100%;
 	background-color: #e63946;
 	border-radius: 5px;

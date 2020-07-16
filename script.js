@@ -206,7 +206,7 @@ tl4.to("#header-chunk1", {
 tl4.to("#sf", { text: "San Francisco Bay Area", duration: 2 })
 tl4.to("#header-chunk2", {
 	text:
-		", but my services are available to all. If you think we can work together, send me a message about it :) or you can always email me, to see email address please click mail button above.",
+		", but my services are available to all. If you think we can work together, send me a message about it. :)",
 	duration: 4,
 	ease: Linear.easeNone,
 })
