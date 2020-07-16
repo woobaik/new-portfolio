@@ -3,6 +3,7 @@ const video = document.getElementById("bg-video")
 gsap.to("#intro-scroll", { y: 15, repeat: 7, yoyoEase: true })
 
 gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(TextPlugin)
 // INITIALIZE gsap timeline => https://greensock.com/docs/v3/GSAP/gsap.timeline()
 let tl = gsap.timeline({
 	scrollTrigger: {
@@ -195,4 +196,32 @@ let tl4 = gsap.timeline({
 tl4.to(".my-picture img", { rotate: 360, duration: 0.5, y: -20, opacity: 1 })
 tl4.to(".contact-icon a", { duration: 0.1, opacity: 1, y: 20, stagger: 0.4 })
 tl4.to(".contact-card", { duration: 0.5, opacity: 1, y: 20 })
+tl4.to("#hi", { text: "Hi, ", duration: 0.5 })
+tl4.to("#header-chunk1", {
+	text:
+		"I am a web developer with a mission to make the web user-friendly :) I'm located in",
+	duration: 2,
+	ease: Linear.easeNone,
+})
+tl4.to("#sf", { text: "San Francisco Bay Area", duration: 2 })
+tl4.to("#header-chunk2", {
+	text:
+		", but my services are available to all. If you think we can work together, send me a message about it :).",
+	duration: 2,
+	ease: Linear.easeNone,
+})
 tl4.to(".form-container", { duration: 1, opacity: 1, y: 10 })
+
+let myEmail = document.getElementById("email-btn")
+// click email btn to show email.
+myEmail.addEventListener("click", (e) => {
+	e.preventDefault()
+	console.log("clicked")
+	gsap.to(".my-mail", { duration: 3, text: "joungwoo.baik@gmail.com" })
+})
+
+let myphone = document.getElementById("phone-btn")
+myphone.addEventListener("click", (e) => {
+	e.preventDefault()
+	gsap.to(".my-phone", { duration: 2, text: "415- 766-1431" })
+})
