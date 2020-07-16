@@ -284,7 +284,7 @@ h1 {
 /* swiper! */
 .slider-container {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	margin-top: 2rem;
 }
@@ -374,18 +374,23 @@ h1 {
 	padding-bottom: 5rem;
 	font-family: "Raleway", sans-serif;
 	line-height: 1.8rem;
+	flex-wrap: wrap;
+	min-height: 100vh;
 }
 
 .contact .my-picture img {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	margin: 3rem;
+	margin: 3rem 2rem;
+	opacity: 0;
 }
 
 .contact .my-icons {
 	color: #e63946;
 	width: 45%;
+	min-width: 400px;
+	margin-bottom: 3rem;
 }
 
 .contact .my-icons .contact-icon a {
@@ -411,7 +416,6 @@ h1 {
 	height: 68px;
 	border-radius: 50%;
 	position: relative;
-	opacity: 0.8;
 }
 
 .contact .icon a {
@@ -426,9 +430,11 @@ h1 {
 	width: 100%;
 	background-color: white;
 	opacity: 0;
+	border-radius: 5px;
 }
 
 .contact-card .card-header {
+	border-radius: 5px;
 	border-bottom: 1px solid #e63946;
 	padding: 10px 20px;
 	background-color: #e63946;
@@ -466,8 +472,10 @@ h1 {
 .form-container {
 	background-color: transparent;
 	width: 45%;
+	min-width: 400px;
 	color: white;
 	opacity: 0;
+	margin: 0 auto;
 }
 
 .form-container .contact-me {
@@ -511,4 +519,10 @@ form input[type="button"] {
 .footer {
 	background-color: white;
 	height: 30vh;
+}
+
+@media (max-width: 450px) {
+	.swiper-container {
+		width: 115% !important;
+	}
 }
