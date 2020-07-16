@@ -180,3 +180,20 @@ let swiper = new Swiper(".swiper-container", {
 		prevEl: ".swiper-button-prev",
 	},
 })
+
+// contact page
+
+let tl4 = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".contact",
+		markers: true,
+		start: "top +=100",
+		onEnter: () => {
+			console.log("contact intro")
+		},
+	},
+})
+
+tl4.to(".contact-icon a", { duration: 1, opacity: 1, y: 20, stagger: 0.4 })
+tl4.to(".contact-card", { duration: 1, opacity: 1, y: 20 })
+tl4.to(".form-container", { duration: 1, opacity: 1, y: 10 })

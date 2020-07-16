@@ -384,7 +384,7 @@ h1 {
 }
 
 .contact .my-icons {
-	color: white;
+	color: #e63946;
 	width: 45%;
 }
 
@@ -394,6 +394,7 @@ h1 {
 	display: inline-block;
 	border-radius: 50%;
 	margin-right: 0.3rem;
+	opacity: 0;
 }
 
 .contact .contact-icon {
@@ -401,7 +402,7 @@ h1 {
 }
 
 .contact .icon {
-	background-color: rgba(147, 231, 52, 0.726);
+	background-color: #ffffff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -424,22 +425,23 @@ h1 {
 	color: black;
 	width: 100%;
 	background-color: white;
+	opacity: 0;
 }
 
 .contact-card .card-header {
-	border-bottom: 1px solid green;
+	border-bottom: 1px solid #e63946;
 	padding: 10px 20px;
-	background-color: rgb(17, 68, 17);
+	background-color: #e63946;
 	color: white;
 }
 
 .contact-card #hi {
-	color: tomato;
+	color: #fea82f;
 	font-size: 2rem;
 }
 
 .contact-card #sf {
-	color: rgb(248, 45, 157);
+	color: #fea82f;
 	font-size: 1.2rem;
 }
 
@@ -458,13 +460,14 @@ h1 {
 	margin-top: 1rem;
 }
 .contact-card .card-body ul .iconify {
-	color: rgb(88, 184, 96);
+	color: #e63946;
 	font-size: 5rem;
 }
 .form-container {
 	background-color: transparent;
 	width: 45%;
 	color: white;
+	opacity: 0;
 }
 
 .form-container .contact-me {
@@ -472,6 +475,7 @@ h1 {
 	text-align: center;
 	margin-bottom: 2rem;
 	letter-spacing: 2px;
+	color: #c0f8d1;
 }
 
 .contact-input {
@@ -479,7 +483,7 @@ h1 {
 	font-size: 18px;
 	border-radius: 5px;
 	line-height: 22px;
-	border: 2px solid #cc6666;
+	border: 2px solid #e63946;
 	background-color: transparent;
 	padding: 13px;
 	margin-bottom: 15px;
@@ -490,11 +494,11 @@ h1 {
 
 form input[type="button"] {
 	width: 100%;
-	background-color: #cc6666;
+	background-color: #e63946;
 	border-radius: 5px;
 	border: 0;
 	cursor: pointer;
-	color: white;
+	color: #ffead0;
 	padding: 10px 0;
 	transition: all 0.3s;
 	margin-top: -4px;
