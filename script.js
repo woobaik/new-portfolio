@@ -102,7 +102,6 @@ let tl3 = gsap.timeline({
 		snap: {
 			snapTo: 0.5,
 		},
-		onEnter: () => console.log("intro started!"),
 	},
 })
 
@@ -188,9 +187,7 @@ let tl4 = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".contact",
 		start: "top +=100",
-		onEnter: () => {
-			console.log("contact intro")
-		},
+		onEnter: () => {},
 	},
 })
 tl4.to(".my-picture img", { rotate: 360, duration: 2, y: -20, opacity: 1 })
