@@ -216,7 +216,7 @@ let myEmail = document.getElementById("email-btn")
 // click email btn to show email.
 myEmail.addEventListener("click", (e) => {
 	e.preventDefault()
-	console.log("clicked")
+
 	gsap.to(".my-mail", { duration: 3, text: "joungwoo.baik@gmail.com" })
 })
 

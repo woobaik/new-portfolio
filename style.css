@@ -533,8 +533,16 @@ form input[type="submit"] {
 /*footer */
 
 .footer {
-	background-color: white;
-	height: 30vh;
+	background: linear-gradient(#706e6e, #ffffff);
+	height: 300px;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer-top-section {
 }
 
 @media (max-width: 450px) {
